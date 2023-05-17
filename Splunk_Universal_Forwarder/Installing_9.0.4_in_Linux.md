@@ -60,9 +60,9 @@ Navigate to Splunk bin directory
 cd /opt/splunkforwarder/bin
 ```
 
-Start the Splunk with accepting license
+Start the Splunk with accepting license & setting the default username (admin) passing the passowrd (Pa55word)
 ```bash
-./splunk start --accept-license
+./splunk start --accept-license --no-prompt --answer-yes --seed-passwd Pa55word
 ```
 
 **Note:** In above step installer will ask you to create username and password, please keep these credentials safe (These are the admin credentials which you will use to Manage Splunk)
