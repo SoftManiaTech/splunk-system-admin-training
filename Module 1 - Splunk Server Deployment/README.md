@@ -28,7 +28,7 @@ chown -R splunk:splunk /opt/splunk/
 
 Verify the ownership of the directory
 ```bash
-ll /opt/splunk
+ll /opt
 ```
 
 Install **"wget"**
