@@ -33,7 +33,7 @@ Install **"wget"**
 yum install wget
 ```
 
-## Step-3 : Splunk Enterprise Installation
+## Step-3 : Splunk Universal Forwarder Installation
 
 Switch to splunk user 
 ```bash
