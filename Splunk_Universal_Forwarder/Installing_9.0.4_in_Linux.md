@@ -82,10 +82,10 @@ Enable boot start
 /opt/splunkforwarder/bin/splunk enable boot-start -user splunk
 ```
 
-That's it... you have successfully installed Splunk on Linux..!!
+That's it... you have successfully installed Splunk Universal forwarder on Linux..!!
 
 Happy Splunking..!!
 
 
 
-Team - SplunkMania
+Team - Soft Mania
