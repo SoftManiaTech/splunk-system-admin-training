@@ -79,6 +79,8 @@ Splunk login screen will popup..
 Exit from splunk user & sign in as **root** user
 ``` bash
 exit
+```
+``` bash
 sudo su 
 ```
 
