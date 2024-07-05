@@ -50,12 +50,12 @@ cd /home/splunk
 
 Download Splunk (Based on the version you want, you can get this command from https://www.splunk.com/en_us/download/splunk-enterprise/thank-you-enterprise.html)
 ```bash
-wget -O splunk-9.1.2-b6b9c8185839-Linux-x86_64.tgz "https://download.splunk.com/products/splunk/releases/9.1.2/linux/splunk-9.1.2-b6b9c8185839-Linux-x86_64.tgz"
+wget -O splunk-9.2.2-d76edf6f0a15-Linux-x86_64.tgz "https://download.splunk.com/products/splunk/releases/9.2.2/linux/splunk-9.2.2-d76edf6f0a15-Linux-x86_64.tgz"
 ```
 
 Extract the tar package
 ```bash
-tar -xvf splunk-9.1.2-b6b9c8185839-Linux-x86_64.tgz -C /opt/
+tar -xvf splunk-9.2.2-d76edf6f0a15-Linux-x86_64.tgz -C /opt/
 ```
 
 Navigate to Splunk bin directory
@@ -78,6 +78,7 @@ Splunk login screen will popup..
 
 Exit from splunk user & sign in as **root** user
 ``` bash
+./splunk stop
 exit
 ```
 ``` bash
@@ -87,6 +88,11 @@ sudo su
 Enable boot start
 ``` bash
 /opt/splunk/bin/splunk enable boot-start -user splunk
+```
+
+``` bash
+sudo su - splunk
+/opt/splunk/bin/splunk start
 ```
 
 That's it... you have successfully installed Splunk on Linux..!!
