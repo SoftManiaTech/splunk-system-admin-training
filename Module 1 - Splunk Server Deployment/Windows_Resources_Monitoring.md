@@ -1,32 +1,28 @@
 ## Monitor CPU usage
 ```bash
-[perfmon://CPU]
+[perfmon://CPU Load]
 interval = 10
 object = Processor
-counters = % Processor Time
-instances = *
+counters = % Processor Time;% User Time
+instances = _Total
 index = perfmon
-disabled = 0
 ```
 
 ## Monitor Memory usage
 ```bash
-[perfmon://Memory]
+[perfmon://Available Memory]
 interval = 10
 object = Memory
-counters = Available MBytes, % Committed Bytes In Use, % Usage
-instances = *
+counters = Available Bytes
 index = perfmon
-disabled = 0
 ```
 
 ## Monitor Disk usage
 ```bash
-[perfmon://LogicalDisk]
-interval = 10
+[perfmon://Free Disk Space]
+interval = 60
 object = LogicalDisk
-counters = % Free Space, % Disk Time, Current Disk Queue Length
-instances = *
+counters = Free Megabytes;% Free Space
+instances = _Total
 index = perfmon
-disabled = 0
 ```
