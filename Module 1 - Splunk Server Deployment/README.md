@@ -10,7 +10,8 @@ Create user & group
 
 ```bash
 useradd splunk
-
+```
+```bash
 groupadd splunk
 
 ```
@@ -92,6 +93,9 @@ Enable boot start
 
 ``` bash
 sudo su - splunk
+```
+
+``` bash
 /opt/splunk/bin/splunk start
 ```
 
@@ -101,4 +105,4 @@ Happy Splunking..!!
 
 
 
-Team - SplunkMania
+Team - SoftMania
