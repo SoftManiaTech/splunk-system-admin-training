@@ -9,6 +9,9 @@ Create user & group
 
 ```bash
 useradd splunk
+```
+
+``` bash
 groupadd splunk
 ```
 Create directory
@@ -74,6 +77,9 @@ At this point, universal Forwarder is installed in your linux server
 Exit from splunk user & sign in as **root** user
 ``` bash
 exit
+```
+
+``` bash
 sudo su 
 ```
 
