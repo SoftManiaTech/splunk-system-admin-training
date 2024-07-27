@@ -90,11 +90,11 @@ Enable boot start
 ``` bash
 /opt/splunk/bin/splunk enable boot-start -user splunk
 ```
-
+Login as a splunk user
 ``` bash
 sudo su - splunk
 ```
-
+Start the Splunk
 ``` bash
 /opt/splunk/bin/splunk start
 ```
