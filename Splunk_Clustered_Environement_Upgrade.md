@@ -350,7 +350,7 @@ cd /opt/splunk/bin/
 ./splunk upgrade-finalize cluster-peers
 ```
 
-#### at this point, Cluster Master, Search Head CLuster, Deployer, All the Indexers are upgraded to the latest version 
+#### At this point, Cluster Master, Search Head CLuster, Deployer, All the Indexers are upgraded to the latest version 
 
 ## Step-17 - Upgrade the forwarders
 
@@ -362,10 +362,10 @@ Note: To upgrade the Heavy Forwarder (Linux) use below Splunkbase App:
 
 [Upgrade Linux Splunk Heavy Forwarder - (Manual / Automate)](https://splunkbase.splunk.com/app/5201/)
 
-#### at this point, Cluster Master, Search Head CLuster, Deployer, All the Indexers, Forwarders are upgraded to the latest version #####
+#### At this point, Cluster Manager, Search Head Cluster, Deployer, All the Indexers, Forwarders are upgraded to the latest version #####
 
 
-# After all the above steps... go to monitoring console to check all the health check items, overview, warnings if any....
+### After all the above steps... go to monitoring console to check all the health check items, overview, warnings if any....
 
 
 ## Happy Splunking..!!
