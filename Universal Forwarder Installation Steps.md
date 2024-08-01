@@ -48,14 +48,14 @@ Navigate to splunk user home directory
 cd /home/splunk
 ```
 
-Download Splunk Universal Forwarder (Based on the version you want, you can get this command from [https://www.splunk.com/en_us/download/splunk-enterprise/thank-you-enterprise.html](https://www.splunk.com/en_us/download/universal-forwarder/thank-you-universalforwarder.html))
+Download Splunk Universal Forwarder (Based on the version you want, you can get this command from (https://www.splunk.com/en_us/download/universal-forwarder.html?locale=en_us)]
 ```bash
-wget -O splunkforwarder-9.0.5-e9494146ae5c-Linux-x86_64.tgz "https://download.splunk.com/products/universalforwarder/releases/9.0.5/linux/splunkforwarder-9.0.5-e9494146ae5c-Linux-x86_64.tgz"
+wget -O splunkforwarder-9.2.2-d76edf6f0a15-Linux-x86_64.tgz "https://download.splunk.com/products/universalforwarder/releases/9.2.2/linux/splunkforwarder-9.2.2-d76edf6f0a15-Linux-x86_64.tgz"
 ```
 
 Extract the tar package
 ```bash
-tar -xvf splunkforwarder-9.0.5-e9494146ae5c-Linux-x86_64.tgz -C /opt/
+tar -xvf splunkforwarder-9.2.2-d76edf6f0a15-Linux-x86_64.tgz -C /opt/
 ```
 
 Navigate to Splunk bin directory
@@ -65,7 +65,7 @@ cd /opt/splunkforwarder/bin
 
 Start the Splunk with accepting license & setting the default username (admin) passing the passowrd (Pa55word)
 ```bash
-./splunk start --accept-license --no-prompt --answer-yes --seed-passwd Pa55word
+./splunk start --accept-license --no-prompt --answer-yes --seed-passwd YOUR_PASSWORD
 ```
 
 **Note:** In above step installer will ask you to create username and password, please keep these credentials safe (These are the admin credentials which you will use to Manage Splunk)
@@ -85,13 +85,12 @@ sudo su
 
 Enable boot start
 ``` bash
+/opt/splunkforwarder/bin/splunk stop
 /opt/splunkforwarder/bin/splunk enable boot-start -user splunk
+/opt/splunkforwarder/bin/splunk start
 ```
 
 That's it... you have successfully installed Splunk Universal forwarder on Linux..!!
 
 Happy Splunking..!!
-
-
-
 Team - Soft Mania
